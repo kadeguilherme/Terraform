@@ -1,6 +1,6 @@
 # Laboratório prático com Terraform Cloud AWS
 
-Gerenciando infraestrutura com código com o Terraform.
+Gerenciando infraestrutura como código com o Terraform.
 O Terraform Labs reúne diversos projetos que desenvolvo para praticar o domínio sobre certos recursos, fixar meus conhecimentos em Terraform.
 
 # Configurando seu ambiente
