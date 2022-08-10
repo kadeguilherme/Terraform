@@ -1,6 +1,11 @@
 provider "aws" {
     region = "us-east-1"
+ 
+}
 
+module "security_groups" {
+  source = "./modules/security-groups"
+  
 }
 
 resource "aws_launch_configuration" "lc-auto-scaling" {
