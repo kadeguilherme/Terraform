@@ -21,7 +21,7 @@ provider "aws" {
     $ export AWS_SECRET_ACCESS_KEY="minha-chave-secreta"   
  ```
     
-# Worflow Terraform
+# Workflow Terraform
    ## Terraform init
    Inicializar o diretório de trabalho que contém os arquivos de configuracão. 
    
