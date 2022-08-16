@@ -12,7 +12,7 @@ provider "aws" {
     secret_key = "minha-chave-secreta"
   }
  ```
- >:warning:   As Chaves incorporado no arquivo main.tf não são recomendadas em ambientes de produção só em abientes de teste pois correm o risco de vazamento das chaves caso esse arquivo esteja algum controle de versão de codigo.
+ >:warning:   As Chaves integrado no arquivo main.tf não são recomendadas em ambientes de produção só em abientes de teste, pois correm o risco de vazamento das chaves caso esse arquivo esteja em algum controle de versão de codigo.
 >
 
 2 - Colocando as chaves na Variáveis de ambiente (Linux)
