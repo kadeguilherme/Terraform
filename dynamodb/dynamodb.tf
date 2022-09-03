@@ -7,7 +7,7 @@ resource "aws_dynamodb_table" "dynamodb-bank" {
     
   attribute {
     name = "cpf"
-    type = "N"
+    type = "S"
   }
 
 
@@ -22,25 +22,11 @@ resource "aws_dynamodb_table_item" "account" {
   table_name = aws_dynamodb_table.dynamodb-bank.name
   hash_key = aws_dynamodb_table.dynamodb-bank.hash_key
 
-  for_each = {
-  "1" = { 
-    name = "Guilherme"
-    age = 20
-    }
-  "2" = { 
-    name = "Jose"
-    age = 10
-    }
-  "3" = {
-    name = "Camila"
-    age = 54
-  }
-  }
-  
+  for_each = var.account
 
   item = <<ITEM
   {
-    "cpf": {"N": "${ each.key }"},
+    "cpf": {"S": "${ each.key }"},
     "name" : {"S" : "${ each.value.name }"},
     "age" : {"N" : "${ each.value.age }"}
   }
