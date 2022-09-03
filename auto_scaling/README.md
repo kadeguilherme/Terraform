@@ -18,7 +18,7 @@ terraform graph | dot -Tsvg > graph.svg
 
 ## ⚠️ Dica: Gerando Representação gráfica mais amigável
 O terraform Visual uma ferramenta simples para visualizar sua Plan do Terraform é bem simples e amigável de usá-lo.
-[Terraform Visual]("https://hieven.github.io/terraform-visual/")
+[Terraform Visual](https://hieven.github.io/terraform-visual)
 
 
 ## Representacão visual da Aplicacão com Terraform Visual 
