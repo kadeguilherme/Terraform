@@ -17,8 +17,8 @@ provider "aws" {
 
 2 - Colocando as chaves na Variáveis de ambiente (Linux)
 ```bash
-    $ export AWS_ACCESS_KEY_ID="minha-chave-acesso"
-    $ export AWS_SECRET_ACCESS_KEY="minha-chave-secreta"   
+    $ export AWS_ACCESS_KEY_ID="<minha-chave-acesso>"
+    $ export AWS_SECRET_ACCESS_KEY="<minha-chave-secreta>"   
  ```
     
 # Workflow Terraform
